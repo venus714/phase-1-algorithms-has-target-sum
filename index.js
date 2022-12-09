@@ -1,11 +1,29 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  const seen={}
+  for (const number of array){
+    const comp=target-number
+    if (comp in seen)return true
+  seen[number] = true}
+  return false
+}
+function find(array) {
+  for (const item of array) {
+    if (item === "sock") return "sock";
+  }
 }
 
+function find (object) {
+  if (object.sock) return "sock";
+}
+
+
+ 
 /* 
   Write the Big O time complexity of your function here
 */
-
+  Runtime: O(n^2)
+  Space: O(n)
 /* 
   Add your pseudocode here
 */
